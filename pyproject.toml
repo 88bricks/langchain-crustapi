@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "langchain-crustapi"
+version = "0.1.0"
+description = "An integration package connecting CrustAPI (Google search data) and LangChain"
+authors = []
+readme = "README.md"
+repository = "https://github.com/88bricks/langchain-crustapi"
+license = "MIT"
+keywords = ["langchain", "crustapi", "google", "search", "serp", "maps", "tools"]
+include = ["langchain_crustapi/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+langchain-core = ">=0.3,<2.0"
+aiohttp = "^3.9"
+requests = "^2.32"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0"
+pytest-asyncio = "^0.23"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
