@@ -4,13 +4,13 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "langchain-crustapi"
-version = "0.1.0"
-description = "An integration package connecting CrustAPI (Google search data) and LangChain"
+version = "0.2.0"
+description = "An integration package connecting CrustAPI (Google search and public LinkedIn data) and LangChain"
 authors = []
 readme = "README.md"
 repository = "https://github.com/crustapi/langchain-crustapi"
 license = "MIT"
-keywords = ["langchain", "crustapi", "google", "search", "serp", "maps", "tools"]
+keywords = ["langchain", "crustapi", "google", "search", "serp", "maps", "linkedin", "tools"]
 include = ["langchain_crustapi/py.typed"]
 
 [tool.poetry.dependencies]
